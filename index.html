@@ -1,0 +1,252 @@
+
+<html>
+  <head>
+      <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+      <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=VT323&display=swap" rel="stylesheet">
+
+      
+<style>
+    html {
+      cursor: default;
+    }
+    a {
+      cursor: pointer;
+    }
+    pre,code {
+      font-family: 'Roboto Mono', monospace;
+      text-align: left;
+    }
+    body {
+      background-color: #1a1b26;
+      color: #ffffff;
+      width: 80%;
+      margin-inline: auto;
+      padding-block: 4rem;
+    }
+    .art {
+      line-height: 1rem;
+      font-family: 'Roboto Mono', monospace;
+    }
+    .green {
+      color: #518706;
+    }
+    .white {
+      color: #ffffff;
+    }
+    .brown {
+      color: #8b4513;
+    }
+    .progress-section {
+      display: flex;
+      justify-content: center;
+      gap: 1%;
+      flex-wrap: wrap;
+    }
+    .container-center {
+      margin: auto;
+      margin-bottom: 1.5rem;
+    }
+    .red {
+      color: #aa4444
+    }
+    .blue {
+      color: #4444aa
+    }
+    .gold {
+      color: #f7d51d;
+    }
+    .off-green {
+      color: #92cc41;
+    }
+    .aoc-banner {
+      text-align: center;
+    }
+    .nes-container.is-dark{
+      background-color:  #1a1b26;
+    }
+    .nes-container.is-dark::after{
+      background-color:  #1a1b26;
+    }
+    .art{
+      text-align: center;
+    }
+    .nes-container.is-dark.with-title > .title   {
+      background-color:  #1a1b26;
+    }
+    .hljs {
+      background-color:  #1a1b26 !important;
+    }
+</style>
+
+      
+  </head>
+  <body>
+    
+<body>
+  <div class="">
+
+    <h1 class="aoc-banner">Advent of Code</h1>
+    <div class="art">
+        <span class="nes-text off-green"></span><br/>
+<span class="nes-text green">        <span class="gold">/\</span></span><br/>
+<span class="nes-text off-green">       <span class="gold"><..></span></span><br/>
+<span class="nes-text green">       <span class="gold">\/</span></span><br/>
+<span class="nes-text off-green">             /\</span><br/>
+<span class="nes-text green">            /..\</span><br/>
+<span class="nes-text off-green">           /++++\</span><br/>
+<span class="nes-text green">          /..<span class="red">()</span>..\</span><br/>
+<span class="nes-text off-green">          /......\</span><br/>
+<span class="nes-text green">         /~'~'~'~'\</span><br/>
+<span class="nes-text off-green">        /..<span class="red">()</span>..<span class="blue">()</span>..\</span><br/>
+<span class="nes-text green">        /..........\</span><br/>
+<span class="nes-text off-green">       /<span class='nes-text is-disabled'>*</span><span class='white'>&</span><span class='nes-text is-disabled'>*</span><span class='white'>&</span><span class='nes-text is-disabled'>*</span><span class='white'>&</span><span class='nes-text is-disabled'>*</span><span class='white'>&</span><span class='nes-text is-disabled'>*</span><span class='white'>&</span><span class='nes-text is-disabled'>*</span><span class='white'>&</span>\</span><br/>
+<span class="nes-text green">      /..<span class="red">()</span>..<span class="blue">()</span>..<span class="red">()</span>..\</span><br/>
+<span class="nes-text off-green">      /..............\</span><br/>
+<span class="nes-text green">     /++++++++++++++++\</span><br/>
+<span class="nes-text off-green">    /..<span class="red">()</span>..<span class="blue">()</span>..<span class="red">()</span>..<span class="blue">()</span>..\</span><br/>
+<span class="nes-text green">    /..................\</span><br/>
+<span class="nes-text off-green">   /~'~'~'~'~'~'~'~'~'~'\</span><br/>
+<span class="nes-text green">  /..<span class="red">()</span>..<span class="blue">()</span>..<span class="red">()</span>..<span class="blue">()</span>..<span class="red">()</span>..\</span><br/>
+<span class="nes-text off-green">  /<span class='nes-text is-disabled'>*</span><span class='white'>&</span><span class='nes-text is-disabled'>*</span><span class='white'>&</span><span class='nes-text is-disabled'>*</span><span class='white'>&</span><span class='nes-text is-disabled'>*</span><span class='white'>&</span><span class='nes-text is-disabled'>*</span><span class='white'>&</span><span class='nes-text is-disabled'>*</span><span class='white'>&</span><span class='nes-text is-disabled'>*</span><span class='white'>&</span><span class='nes-text is-disabled'>*</span><span class='white'>&</span><span class='nes-text is-disabled'>*</span><span class='white'>&</span><span class='nes-text is-disabled'>*</span><span class='white'>&</span><span class='nes-text is-disabled'>*</span><span class='white'>&</span>\</span><br/>
+<span class="nes-text green"> /........................\</span><br/>
+<span class="nes-text off-green">/,.,.,.,.,.,.,.,.,.,.,.,.,.\</span><br/>
+<span class="nes-text is-error">     <span class="brown">|   |</span></span><br/>
+<span class="nes-text is-error">     <span class="brown">|   |</span></span><br/>
+<span class="nes-text is-error">    <span class="red">\_____/</span></span><br/>
+<span class="nes-text is-error"></span><br/>
+    </div>
+
+    
+      <div class="nes-table-responsive" style="margin-bottom: 2rem;">
+            <table style="margin: auto;" class="container-center nes-table is-bordered is-dark is-centered">
+              <thead>
+                <tr>
+                  <th>language</th>
+                  <th>year</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>go</td>
+                  <td>2022</td>
+                </tr>
+            </table>
+      </div>
+  
+
+    <div class="nes-container with-title is-dark">
+        <p class="title">progress</p>
+        <div class="progress-section">
+          
+      <a href="./day1.html">
+        <i class="nes-icon is-small star  hi"></i>
+      </a>
+
+      <a href="./day2.html">
+        <i class="nes-icon is-small star  hi"></i>
+      </a>
+
+      <a href="./day3.html">
+        <i class="nes-icon is-small star  hi"></i>
+      </a>
+
+      <a href="./day4.html">
+        <i class="nes-icon is-small star  hi"></i>
+      </a>
+
+      <a href="./day5.html">
+        <i class="nes-icon is-small star  hi"></i>
+      </a>
+
+      <a href="./day6.html">
+        <i class="nes-icon is-small star  hi"></i>
+      </a>
+
+      <a href="./day7.html">
+        <i class="nes-icon is-small star  hi"></i>
+      </a>
+
+      <a href="./day8.html">
+        <i class="nes-icon is-small star  hi"></i>
+      </a>
+
+      <a href="./day9.html">
+        <i class="nes-icon is-small star  hi"></i>
+      </a>
+
+      <a href="./day10.html">
+        <i class="nes-icon is-small star  hi"></i>
+      </a>
+
+      <a href="./day11.html">
+        <i class="nes-icon is-small star  hi"></i>
+      </a>
+
+      <a href="./day12.html">
+        <i class="nes-icon is-small star  hi"></i>
+      </a>
+
+      <a href="./day13.html">
+        <i class="nes-icon is-small star  hi"></i>
+      </a>
+
+      <a href="./day14.html">
+        <i class="nes-icon is-small star  hi"></i>
+      </a>
+
+      <a href="./day15.html">
+        <i class="nes-icon is-small star  hi"></i>
+      </a>
+
+      <a href="./day16.html">
+        <i class="nes-icon is-small star  hi"></i>
+      </a>
+
+      <a href="./day17.html">
+        <i class="nes-icon is-small star is-half hi"></i>
+      </a>
+
+      <a href="./day18.html">
+        <i class="nes-icon is-small star is-transparent hi"></i>
+      </a>
+
+      <a href="./day19.html">
+        <i class="nes-icon is-small star is-transparent hi"></i>
+      </a>
+
+      <a href="./day20.html">
+        <i class="nes-icon is-small star is-transparent hi"></i>
+      </a>
+
+      <a href="./day21.html">
+        <i class="nes-icon is-small star is-transparent hi"></i>
+      </a>
+
+      <a href="./day22.html">
+        <i class="nes-icon is-small star is-transparent hi"></i>
+      </a>
+
+      <a href="./day23.html">
+        <i class="nes-icon is-small star is-transparent hi"></i>
+      </a>
+
+      <a href="./day24.html">
+        <i class="nes-icon is-small star is-transparent hi"></i>
+      </a>
+
+      <a href="./day25.html">
+        <i class="nes-icon is-small star is-transparent hi"></i>
+      </a>
+
+        </div>
+    </div>
+
+  </div>
+</body>
+
+  </body>
+</html>
