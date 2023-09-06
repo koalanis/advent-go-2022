@@ -1,0 +1,38 @@
+name: Deploy Advent of Code Progress Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main 
+      
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+      
+      - name: Configure npm for GitHub Packages
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+          echo "@koalanis:registry=https://npm.pkg.github.com" >> ~/.npmrc
+
+      - name: Install
+        run: npm install --save @koalanis/advent-pages
+
+      - name: Build
+        run: npx @koalanis/advent-pages generate
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages  # Specify the branch for GitHub Pages
+          folder: advent-pages   # Specify the folder to deploy
+          token: ${{ secrets.GITHUB_TOKEN }}
+

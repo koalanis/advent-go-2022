@@ -1,0 +1,91 @@
+{
+  "lang": "go",
+  "year": 2022,
+  "days": {
+    "1": {
+      "partOneDone": true,
+      "partTwoDone": true,
+      "codeOne": "./day1/main.go"
+    },
+    "2": {
+      "partOneDone": true,
+      "partTwoDone": true,
+      "codeOne": "./day2/main.go"
+    },
+    "3": {
+      "partOneDone": true,
+      "partTwoDone": true,
+      "codeOne": "./day3/main.go"
+    },
+    "4": {
+      "partOneDone": true,
+      "partTwoDone": true,
+      "codeOne": "./day4/main.go"
+    },
+    "5": {
+      "partOneDone": true,
+      "partTwoDone": true,
+      "codeOne": "./day5/main.go"
+    },
+    "6": {
+      "partOneDone": true,
+      "partTwoDone": true,
+      "codeOne": "./day6/main.go"
+    },
+    "7": {
+      "partOneDone": true,
+      "partTwoDone": true,
+      "codeOne": "./day7/main.go"
+    },
+    "8": {
+      "partOneDone": true,
+      "partTwoDone": true,
+      "codeOne": "./day8/main.go"
+    },
+    "9": {
+      "partOneDone": true,
+      "partTwoDone": true,
+      "codeOne": "./day9/main.go"
+    },
+    "10": {
+      "partOneDone": true,
+      "partTwoDone": true,
+      "codeOne": "./day10/main.go"
+    },
+    "11": {
+      "partOneDone": true,
+      "partTwoDone": true,
+      "codeOne": "./day11/main.go"
+    },
+    "12": {
+      "partOneDone": true,
+      "partTwoDone": true,
+      "codeOne": "./day12/main.go"
+    },
+    "13": {
+      "partOneDone": true,
+      "partTwoDone": true,
+      "codeOne": "./day13/main.go"
+    },
+    "14": {
+      "partOneDone": true,
+      "partTwoDone": true,
+      "codeOne": "./day14/main.go"
+    },
+    "15": {
+      "partOneDone": true,
+      "partTwoDone": true,
+      "codeOne": "./day15/main.go"
+    },
+    "16": {
+      "partOneDone": true,
+      "partTwoDone": true,
+      "codeOne": "./day16/main.go"
+    },
+    "17": {
+      "partOneDone": true,
+      "partTwoDone": false,
+      "codeOne": "./day17/main.go"
+    }
+  }
+}
